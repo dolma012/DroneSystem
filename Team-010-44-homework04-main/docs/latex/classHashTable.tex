@@ -1,0 +1,139 @@
+\hypertarget{classHashTable}{}\doxysection{Hash\+Table Class Reference}
+\label{classHashTable}\index{HashTable@{HashTable}}
+
+
+\mbox{\hyperlink{classHashTable}{Hash\+Table}} class that implements a hashtable used to store the integer corresponding to the drone\textquotesingle{}s name.  
+
+
+
+
+{\ttfamily \#include $<$Hash\+Table.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHashTable_a9ce5569bb945880cacb29aaba6f3e3f9}\label{classHashTable_a9ce5569bb945880cacb29aaba6f3e3f9}} 
+\mbox{\hyperlink{classHashTable_a9ce5569bb945880cacb29aaba6f3e3f9}{$\sim$\+Hash\+Table}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classHashTable}{Hash\+Table}} deconstructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHashTable_a92a7c8f8acb38f636e3a51d507ba95d9}{get\+Hash}} (int key)
+\begin{DoxyCompactList}\small\item\em Hash function calculates an index to hash element to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHashTable_adc3bf2b214c572819ba957ad314d7db3}\label{classHashTable_adc3bf2b214c572819ba957ad314d7db3}} 
+\mbox{\hyperlink{classHashTable_adc3bf2b214c572819ba957ad314d7db3}{Hash\+Table}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classHashTable}{Hash\+Table}} constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHashTable_a3f62b38e9465b11fe5c7d9da8cb9a4e4}{set\+Total\+Elements}} (int val)
+\begin{DoxyCompactList}\small\item\em Resizes the vector table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHashTable_a5daf22f015ceecc1e63ca6930d075f0a}{insert\+Element}} (int droneN, int key)
+\begin{DoxyCompactList}\small\item\em Insures the key at a given index in the table vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHashTable_a6e0d898e9a429e6b0364b186e0a2d997}{count\+Elements}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the number of elements in the table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHashTable_a3fcfc0833a4c7f5e2e8984639f443d19}{get\+Data}} (int key)
+\begin{DoxyCompactList}\small\item\em Gets the value at the given index. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHashTable_ac070410c28def1d4340b6f0b6030de18}{get\+Index}} (int data)
+\begin{DoxyCompactList}\small\item\em Returns the index of an element in the vector table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classHashTable}{Hash\+Table}} class that implements a hashtable used to store the integer corresponding to the drone\textquotesingle{}s name. 
+
+Helper class used in Singleton.\+cc 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHashTable_a6e0d898e9a429e6b0364b186e0a2d997}\label{classHashTable_a6e0d898e9a429e6b0364b186e0a2d997}} 
+\index{HashTable@{HashTable}!countElements@{countElements}}
+\index{countElements@{countElements}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{countElements()}{countElements()}}
+{\footnotesize\ttfamily int Hash\+Table\+::count\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the number of elements in the table. 
+
+\begin{DoxyReturn}{Returns}
+returns the int total\+\_\+elements 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHashTable_a3fcfc0833a4c7f5e2e8984639f443d19}\label{classHashTable_a3fcfc0833a4c7f5e2e8984639f443d19}} 
+\index{HashTable@{HashTable}!getData@{getData}}
+\index{getData@{getData}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily int Hash\+Table\+::get\+Data (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Gets the value at the given index. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em key} & the given index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHashTable_a92a7c8f8acb38f636e3a51d507ba95d9}\label{classHashTable_a92a7c8f8acb38f636e3a51d507ba95d9}} 
+\index{HashTable@{HashTable}!getHash@{getHash}}
+\index{getHash@{getHash}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{getHash()}{getHash()}}
+{\footnotesize\ttfamily int Hash\+Table\+::get\+Hash (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Hash function calculates an index to hash element to. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em key} & the int that is to be converted to a hash value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int represented the hashed value from the key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHashTable_ac070410c28def1d4340b6f0b6030de18}\label{classHashTable_ac070410c28def1d4340b6f0b6030de18}} 
+\index{HashTable@{HashTable}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily int Hash\+Table\+::get\+Index (\begin{DoxyParamCaption}\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+Returns the index of an element in the vector table. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & the element we want the index of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHashTable_a5daf22f015ceecc1e63ca6930d075f0a}\label{classHashTable_a5daf22f015ceecc1e63ca6930d075f0a}} 
+\index{HashTable@{HashTable}!insertElement@{insertElement}}
+\index{insertElement@{insertElement}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{insertElement()}{insertElement()}}
+{\footnotesize\ttfamily void Hash\+Table\+::insert\+Element (\begin{DoxyParamCaption}\item[{int}]{droneN,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Insures the key at a given index in the table vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em droneN} & the index in the table \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & the key to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHashTable_a3f62b38e9465b11fe5c7d9da8cb9a4e4}\label{classHashTable_a3f62b38e9465b11fe5c7d9da8cb9a4e4}} 
+\index{HashTable@{HashTable}!setTotalElements@{setTotalElements}}
+\index{setTotalElements@{setTotalElements}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{setTotalElements()}{setTotalElements()}}
+{\footnotesize\ttfamily void Hash\+Table\+::set\+Total\+Elements (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Resizes the vector table. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em val} & the amount to resize the table by \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/include/Hash\+Table.\+h\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/src/Hash\+Table.\+cc\end{DoxyCompactItemize}

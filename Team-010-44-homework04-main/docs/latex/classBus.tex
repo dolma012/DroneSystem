@@ -1,0 +1,169 @@
+\hypertarget{classBus}{}\doxysection{Bus Class Reference}
+\label{classBus}\index{Bus@{Bus}}
+
+
+Inheritance diagram for Bus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classBus__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBus__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBus_ada7ec0325e072e507816af946c26e894}{Bus}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em Parameter constructor. Busses are created with a name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBus_aab6194602b6a5a4fa87987f7c1adf35d}\label{classBus_aab6194602b6a5a4fa87987f7c1adf35d}} 
+\mbox{\hyperlink{classBus_aab6194602b6a5a4fa87987f7c1adf35d}{$\sim$\+Bus}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBus}{Bus}} \& \mbox{\hyperlink{classBus_a78848191e6a86150fc273671d434bdbc}{operator=}} (const \mbox{\hyperlink{classBus}{Bus}} \&bus)=delete
+\begin{DoxyCompactList}\small\item\em Removed assignment operator so busses cannot be copied. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBus_ab37eb3412b437e2f86cb0694fba71625}{Bus}} (const \mbox{\hyperlink{classBus}{Bus}} \&bus)=delete
+\begin{DoxyCompactList}\small\item\em Removed copy constructor so busses cannot be copied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBus_a0f8dcc1ffbe1ad308e617acf8600acf3}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Updates the busses position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBus_a59520a6917cd5e0c6048123926c28c62}{Get\+Nearest\+Entity}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Gets the nearest entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBus_a48240e258bf5a99ee7bc29ed78962d9c}\label{classBus_a48240e258bf5a99ee7bc29ed78962d9c}} 
+void \mbox{\hyperlink{classBus_a48240e258bf5a99ee7bc29ed78962d9c}{set\+Final\+Dest\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Sets the destination strategy using the nearest entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBus_a371cebba6cfbab501dfaadf10dfb1083}{nearest\+Drop\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Goes through all robots on the bus and looks for the shortest destination distance and sets that robot as the nearest\+Entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBus_a477061353044cf917773365e3ebd1456}{available\+Robots}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Checks if theres any available robots in the scheduler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBus_ada7ec0325e072e507816af946c26e894}\label{classBus_ada7ec0325e072e507816af946c26e894}} 
+\index{Bus@{Bus}!Bus@{Bus}}
+\index{Bus@{Bus}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{Bus()}{Bus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bus\+::\+Bus (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Parameter constructor. Busses are created with a name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & Name of the \mbox{\hyperlink{classTransportation}{Transportation}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBus_ab37eb3412b437e2f86cb0694fba71625}\label{classBus_ab37eb3412b437e2f86cb0694fba71625}} 
+\index{Bus@{Bus}!Bus@{Bus}}
+\index{Bus@{Bus}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{Bus()}{Bus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bus\+::\+Bus (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBus}{Bus}} \&}]{bus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Removed copy constructor so busses cannot be copied. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bus} & bus to be copied \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBus_a477061353044cf917773365e3ebd1456}\label{classBus_a477061353044cf917773365e3ebd1456}} 
+\index{Bus@{Bus}!availableRobots@{availableRobots}}
+\index{availableRobots@{availableRobots}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{availableRobots()}{availableRobots()}}
+{\footnotesize\ttfamily bool Bus\+::available\+Robots (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Checks if theres any available robots in the scheduler. 
+
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em scheduler} & A vector of pointers to I\+Entitys (entities) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBus_a59520a6917cd5e0c6048123926c28c62}\label{classBus_a59520a6917cd5e0c6048123926c28c62}} 
+\index{Bus@{Bus}!GetNearestEntity@{GetNearestEntity}}
+\index{GetNearestEntity@{GetNearestEntity}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{GetNearestEntity()}{GetNearestEntity()}}
+{\footnotesize\ttfamily void Bus\+::\+Get\+Nearest\+Entity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the nearest entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em scheduler} & A vector of pointers to I\+Entitys (entities) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransportation_af4b22a5ca6fb8915834ca19fa5353bfc}{Transportation}}.
+
+\mbox{\Hypertarget{classBus_a371cebba6cfbab501dfaadf10dfb1083}\label{classBus_a371cebba6cfbab501dfaadf10dfb1083}} 
+\index{Bus@{Bus}!nearestDropOff@{nearestDropOff}}
+\index{nearestDropOff@{nearestDropOff}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{nearestDropOff()}{nearestDropOff()}}
+{\footnotesize\ttfamily void Bus\+::nearest\+Drop\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Goes through all robots on the bus and looks for the shortest destination distance and sets that robot as the nearest\+Entity. 
+
+\mbox{\Hypertarget{classBus_a78848191e6a86150fc273671d434bdbc}\label{classBus_a78848191e6a86150fc273671d434bdbc}} 
+\index{Bus@{Bus}!operator=@{operator=}}
+\index{operator=@{operator=}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBus}{Bus}}\& Bus\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBus}{Bus}} \&}]{bus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Removed assignment operator so busses cannot be copied. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bus} & bus to be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBus_a0f8dcc1ffbe1ad308e617acf8600acf3}\label{classBus_a0f8dcc1ffbe1ad308e617acf8600acf3}} 
+\index{Bus@{Bus}!Update@{Update}}
+\index{Update@{Update}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Bus\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the busses position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & Delta time. The change in time between each frame \\
+\hline
+\mbox{\texttt{ in}}  & {\em scheduler} & A vector of pointers to entities \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransportation_a0afb01c2e5aef8523e85e4a93017ddb4}{Transportation}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/include/Bus.\+h\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/src/Bus.\+cc\end{DoxyCompactItemize}

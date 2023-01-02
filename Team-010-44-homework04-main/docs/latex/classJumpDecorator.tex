@@ -1,0 +1,94 @@
+\hypertarget{classJumpDecorator}{}\doxysection{Jump\+Decorator Class Reference}
+\label{classJumpDecorator}\index{JumpDecorator@{JumpDecorator}}
+
+
+Concrete decorator class that will celebrate by jumping.  
+
+
+
+
+{\ttfamily \#include $<$Jump\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for Jump\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classJumpDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Jump\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classJumpDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJumpDecorator_a0895afdd51622db154ddf48cc7cf8c85}{Jump\+Decorator}} (\mbox{\hyperlink{classIStrategy}{I\+Strategy}} $\ast$\mbox{\hyperlink{classCelebrationDecorator_abd8ba74a8cf4dc060feac318fc10e2a9}{strategy}})
+\begin{DoxyCompactList}\small\item\em Constructor, sets time to 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJumpDecorator_acc9ef42d52b08ae18e6ca790b545b28d}\label{classJumpDecorator_acc9ef42d52b08ae18e6ca790b545b28d}} 
+\mbox{\hyperlink{classJumpDecorator_acc9ef42d52b08ae18e6ca790b545b28d}{$\sim$\+Jump\+Decorator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJumpDecorator_a6d46675428916bbe6acd10fb25d51f86}{Move}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$entity, double dt)
+\begin{DoxyCompactList}\small\item\em Move the entity by jumping to celebrate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJumpDecorator_a94b32bed5b764df15980356aa8763abe}\label{classJumpDecorator_a94b32bed5b764df15980356aa8763abe}} 
+bool \mbox{\hyperlink{classJumpDecorator_a94b32bed5b764df15980356aa8763abe}{Is\+Completed}} ()
+\begin{DoxyCompactList}\small\item\em Checks if current strategy is completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete decorator class that will celebrate by jumping. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJumpDecorator_a0895afdd51622db154ddf48cc7cf8c85}\label{classJumpDecorator_a0895afdd51622db154ddf48cc7cf8c85}} 
+\index{JumpDecorator@{JumpDecorator}!JumpDecorator@{JumpDecorator}}
+\index{JumpDecorator@{JumpDecorator}!JumpDecorator@{JumpDecorator}}
+\doxysubsubsection{\texorpdfstring{JumpDecorator()}{JumpDecorator()}}
+{\footnotesize\ttfamily Jump\+Decorator\+::\+Jump\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIStrategy}{I\+Strategy}} $\ast$}]{strategy }\end{DoxyParamCaption})}
+
+
+
+Constructor, sets time to 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em strategy} & the I\+Startegy we want to add the deocrator onto \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJumpDecorator_a6d46675428916bbe6acd10fb25d51f86}\label{classJumpDecorator_a6d46675428916bbe6acd10fb25d51f86}} 
+\index{JumpDecorator@{JumpDecorator}!Move@{Move}}
+\index{Move@{Move}!JumpDecorator@{JumpDecorator}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Jump\+Decorator\+::\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Move the entity by jumping to celebrate. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em entity} & \mbox{\hyperlink{classIEntity}{I\+Entity}} we want to move/celebrate \\
+\hline
+\mbox{\texttt{ in}}  & {\em dt} & delta time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classCelebrationDecorator_aaea8fd11f7d0e12dd79ccdc63ab1bbf6}{Celebration\+Decorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/include/Jump\+Decorator.\+h\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/src/Jump\+Decorator.\+cc\end{DoxyCompactItemize}

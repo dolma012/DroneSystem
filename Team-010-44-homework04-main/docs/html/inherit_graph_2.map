@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIEntityFactory.html" title="Abstract Entity Factory class used in CompositeFactory, DroneFactory, and RobotFactory...." alt="" coords="5,56,117,83"/>
+<area shape="rect" id="node2" href="$classCompositeFactory.html" title="Concrete Composite Factory class which contains DroneFactory and RobotFactories as its component fact..." alt="" coords="165,5,305,32"/>
+<area shape="rect" id="node3" href="$classDroneFactory.html" title="Component Drone Factory that creates Drones." alt="" coords="181,56,290,83"/>
+<area shape="rect" id="node4" href="$classRobotFactory.html" title="Component Robot Factory that creates Robots." alt="" coords="181,107,289,133"/>
+</map>

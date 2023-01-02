@@ -1,0 +1,327 @@
+\hypertarget{classRobot}{}\doxysection{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+
+
+Class that represents a robot. Robots move using euler integration based on a specified velocity and direction.  
+
+
+
+
+{\ttfamily \#include $<$Robot.\+h$>$}
+
+
+
+Inheritance diagram for Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{classRobot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{classRobot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRobot_a007753e52e18f9a487d8241da97d4150}{Robot}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em Parameter constructor Construct a new \mbox{\hyperlink{classRobot}{Robot}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobot_a2aeab6ed0e3dc953c076a2d3937e661d}\label{classRobot_a2aeab6ed0e3dc953c076a2d3937e661d}} 
+\mbox{\hyperlink{classRobot_a2aeab6ed0e3dc953c076a2d3937e661d}{$\sim$\+Robot}} () override=default
+\begin{DoxyCompactList}\small\item\em Destructor Override and destroy the \mbox{\hyperlink{classRobot}{Robot}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classRobot_a0505da0b08d679a828c005879da63b16}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classRobot_a2d6dd7a322d2d2c0bc1c44566253b9f1}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s direction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classRobot_abe629d465798403a706f574b33284659}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s destination. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRobot_a2b56c4d4cf7b0ef07ce6713ffae6e490}{Get\+Availability}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s availibility status. \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classRobot_a0ac023c6fb5d7ad58b180903010d2924}{Get\+Details}} () const override
+\begin{DoxyCompactList}\small\item\em Overrides Get\+Datils() from \mbox{\hyperlink{classIEntity}{I\+Entity}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classRobot_ad199885470ae6e1109153526c21473c5}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s speed. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRobot_af3e8590ef2a275caf25363079f7b4273}{Get\+Strategy\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s strategy name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_a2ef6424fa88e43973ade3fddb4ec649b}{Set\+Availability}} (bool choice)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s availibility. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_a35ce73ea17f6cfbcbfe272c6bff038ba}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_aaa0e41dbf57cb4040c0319b93c5a008c}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_a557af09ca03132837bc6574bca6fbe05}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the robot\textquotesingle{}s destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_a59c7dbc7346f86df3941c5dad9b12507}{Set\+Strategy\+Name}} (std\+::string strategy\+Name\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s strategy name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_a1cb405ec49d47c46f3aa87fde1415b59}{Rotate}} (double angle)
+\begin{DoxyCompactList}\small\item\em Rotate the robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a robot. Robots move using euler integration based on a specified velocity and direction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRobot_a007753e52e18f9a487d8241da97d4150}\label{classRobot_a007753e52e18f9a487d8241da97d4150}} 
+\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Robot()}{Robot()}}
+{\footnotesize\ttfamily Robot\+::\+Robot (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Parameter constructor Construct a new \mbox{\hyperlink{classRobot}{Robot}} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRobot_a2b56c4d4cf7b0ef07ce6713ffae6e490}\label{classRobot_a2b56c4d4cf7b0ef07ce6713ffae6e490}} 
+\index{Robot@{Robot}!GetAvailability@{GetAvailability}}
+\index{GetAvailability@{GetAvailability}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{GetAvailability()}{GetAvailability()}}
+{\footnotesize\ttfamily bool Robot\+::\+Get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s availibility status. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s status. true -\/ available, talse -\/ unavailable 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_ab98734fed42933c72b3ff996b146a558}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_abe629d465798403a706f574b33284659}\label{classRobot_abe629d465798403a706f574b33284659}} 
+\index{Robot@{Robot}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Robot\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s destination. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} Object containing the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s destination 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a0ac023c6fb5d7ad58b180903010d2924}\label{classRobot_a0ac023c6fb5d7ad58b180903010d2924}} 
+\index{Robot@{Robot}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Robot\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Overrides Get\+Datils() from \mbox{\hyperlink{classIEntity}{I\+Entity}}. 
+
+\begin{DoxyReturn}{Returns}
+Json\+Object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a2d6dd7a322d2d2c0bc1c44566253b9f1}\label{classRobot_a2d6dd7a322d2d2c0bc1c44566253b9f1}} 
+\index{Robot@{Robot}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Robot\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s direction. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} Object containing the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s direction 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a0505da0b08d679a828c005879da63b16}\label{classRobot_a0505da0b08d679a828c005879da63b16}} 
+\index{Robot@{Robot}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Robot\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s position. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} Object containing the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s position 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_ad199885470ae6e1109153526c21473c5}\label{classRobot_ad199885470ae6e1109153526c21473c5}} 
+\index{Robot@{Robot}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Robot\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s speed. 
+
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s speed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_af3e8590ef2a275caf25363079f7b4273}\label{classRobot_af3e8590ef2a275caf25363079f7b4273}} 
+\index{Robot@{Robot}!GetStrategyName@{GetStrategyName}}
+\index{GetStrategyName@{GetStrategyName}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{GetStrategyName()}{GetStrategyName()}}
+{\footnotesize\ttfamily std\+::string Robot\+::\+Get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s strategy name. 
+
+\begin{DoxyReturn}{Returns}
+a string contianing the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s strategy name 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9b4a238a04f5cd56db89e50292355005}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a1cb405ec49d47c46f3aa87fde1415b59}\label{classRobot_a1cb405ec49d47c46f3aa87fde1415b59}} 
+\index{Robot@{Robot}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Robot\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Rotate the robot. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em angle} & the angle in which to rotate the \mbox{\hyperlink{classRobot}{Robot}} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a59e7deed4d0979f04de8457a5afb1cb3}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a2ef6424fa88e43973ade3fddb4ec649b}\label{classRobot_a2ef6424fa88e43973ade3fddb4ec649b}} 
+\index{Robot@{Robot}!SetAvailability@{SetAvailability}}
+\index{SetAvailability@{SetAvailability}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{SetAvailability()}{SetAvailability()}}
+{\footnotesize\ttfamily void Robot\+::\+Set\+Availability (\begin{DoxyParamCaption}\item[{bool}]{choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s availibility. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em choice} & true for available, false for unavailable \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a557af09ca03132837bc6574bca6fbe05}\label{classRobot_a557af09ca03132837bc6574bca6fbe05}} 
+\index{Robot@{Robot}!SetDestination@{SetDestination}}
+\index{SetDestination@{SetDestination}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{SetDestination()}{SetDestination()}}
+{\footnotesize\ttfamily void Robot\+::\+Set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{des\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the robot\textquotesingle{}s destination. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em des\+\_\+} & a \mbox{\hyperlink{classVector3}{Vector3}} Object containing the destination to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_aaa0e41dbf57cb4040c0319b93c5a008c}\label{classRobot_aaa0e41dbf57cb4040c0319b93c5a008c}} 
+\index{Robot@{Robot}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void Robot\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{dir\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s direction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dir\+\_\+} & a \mbox{\hyperlink{classVector3}{Vector3}} Object containing the direction to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a35ce73ea17f6cfbcbfe272c6bff038ba}\label{classRobot_a35ce73ea17f6cfbcbfe272c6bff038ba}} 
+\index{Robot@{Robot}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Robot\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{pos\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos\+\_\+} & a \mbox{\hyperlink{classVector3}{Vector3}} Object containing the position to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_af0475048b09dc13ed6cf8e7c7be2ae6b}{I\+Entity}}.
+
+\mbox{\Hypertarget{classRobot_a59c7dbc7346f86df3941c5dad9b12507}\label{classRobot_a59c7dbc7346f86df3941c5dad9b12507}} 
+\index{Robot@{Robot}!SetStrategyName@{SetStrategyName}}
+\index{SetStrategyName@{SetStrategyName}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{SetStrategyName()}{SetStrategyName()}}
+{\footnotesize\ttfamily void Robot\+::\+Set\+Strategy\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{strategy\+Name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{classRobot}{Robot}}\textquotesingle{}s strategy name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em the} & strategy name to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a933def05f85783fddbf05e8257cc8880}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/include/Robot.\+h\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/src/Robot.\+cc\end{DoxyCompactItemize}

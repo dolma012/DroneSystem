@@ -1,0 +1,239 @@
+\hypertarget{classSingleton}{}\doxysection{Singleton Class Reference}
+\label{classSingleton}\index{Singleton@{Singleton}}
+
+
+The \mbox{\hyperlink{classSingleton}{Singleton}} class defines the {\ttfamily Get\+Instance} method that serves as an alternative to constructor and lets clients access the same instance of this class over and over.  
+
+
+
+
+{\ttfamily \#include $<$Singleton.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSingleton_a50bb7c6905106a3a6fc07103f681af92}\label{classSingleton_a50bb7c6905106a3a6fc07103f681af92}} 
+\mbox{\hyperlink{classSingleton_a50bb7c6905106a3a6fc07103f681af92}{Singleton}} (\mbox{\hyperlink{classSingleton}{Singleton}} \&other)=delete
+\begin{DoxyCompactList}\small\item\em Singletons should not be cloneable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSingleton_a9e0f4ea9f6e1765b7c3839535fb51485}\label{classSingleton_a9e0f4ea9f6e1765b7c3839535fb51485}} 
+void \mbox{\hyperlink{classSingleton_a9e0f4ea9f6e1765b7c3839535fb51485}{operator=}} (const \mbox{\hyperlink{classSingleton}{Singleton}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Singletons should not be assignable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSingleton_a08198156ba6c6a286956514d2d0337be}\label{classSingleton_a08198156ba6c6a286956514d2d0337be}} 
+void \mbox{\hyperlink{classSingleton_a08198156ba6c6a286956514d2d0337be}{write2\+C\+SV}} ()
+\begin{DoxyCompactList}\small\item\em Writes data to a csv file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_ac530351296821e6f23bf9f09180bbb92}{Add\+Drone}} (\mbox{\hyperlink{classDrone}{Drone}} $\ast$drone)
+\begin{DoxyCompactList}\small\item\em Adds a drone to the drone\+List. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSingleton_a33baa8e709d33fa8cc34cb25e361cfdd}{value}} () const
+\begin{DoxyCompactList}\small\item\em Return \mbox{\hyperlink{classSingleton}{Singleton}}\textquotesingle{}s value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_a677837e214a9082d26c010d2c2418cd8}{Update\+Total\+Distance}} (\mbox{\hyperlink{classDrone}{Drone}} \&drone, float distance)
+\begin{DoxyCompactList}\small\item\em Updates the drone\textquotesingle{}s total\+Distance traveled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_a124b9cfca08f245aee11f8c9cb24b530}{Update\+Pickup\+Distance}} (\mbox{\hyperlink{classDrone}{Drone}} \&drone, float distance)
+\begin{DoxyCompactList}\small\item\em Updates distance traveled durring pickup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_aebcce783b0aaf9ad2d86d60f0b08f926}{Update\+Trip\+Distance}} (\mbox{\hyperlink{classDrone}{Drone}} \&drone, float distance)
+\begin{DoxyCompactList}\small\item\em Update distance traveled via trips only. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_acefc58fd4067b84f8f4045f166a8c600}{Update\+Total\+Trips}} (\mbox{\hyperlink{classDrone}{Drone}} \&drone)
+\begin{DoxyCompactList}\small\item\em Increments the drone number of trips by 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_a2e20cba109c48e6be46b9ff61a9c2e24}{Update\+Total\+Time}} (\mbox{\hyperlink{classDrone}{Drone}} \&drone, double time)
+\begin{DoxyCompactList}\small\item\em Updates the total time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSingleton_af23745b417359444b99407ac0826dc8a}{Update\+Trip\+Time}} (\mbox{\hyperlink{classDrone}{Drone}} \&drone, double time)
+\begin{DoxyCompactList}\small\item\em Updates the total time spent on trips. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSingleton}{Singleton}} $\ast$ \mbox{\hyperlink{classSingleton_a7d651958d99368bc75548efe9d598147}{Get\+Instance}} (const std\+::string \&\mbox{\hyperlink{classSingleton_a33baa8e709d33fa8cc34cb25e361cfdd}{value}})
+\begin{DoxyCompactList}\small\item\em This is the static method that controls the access to the singleton instance. On the first run, it creates a singleton object and places it into the static field. On subsequent runs, it returns the client existing object stored in the static field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSingleton_aa7455f5d3492d901cc796f5869ddc1cc}{Singleton}} (const std\+::string \mbox{\hyperlink{classSingleton_a33baa8e709d33fa8cc34cb25e361cfdd}{value}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSingleton}{Singleton}} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSingleton_a9a89f3e246c117bd5b0f3011cf54fd82}\label{classSingleton_a9a89f3e246c117bd5b0f3011cf54fd82}} 
+std\+::string {\bfseries value\+\_\+}
+\item 
+\mbox{\Hypertarget{classSingleton_ad6a275e82e3aa03ec6f4432c6dc87951}\label{classSingleton_ad6a275e82e3aa03ec6f4432c6dc87951}} 
+std\+::vector$<$ \mbox{\hyperlink{classDrone}{Drone}} $\ast$ $>$ {\bfseries drone\+List}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classSingleton}{Singleton}} class defines the {\ttfamily Get\+Instance} method that serves as an alternative to constructor and lets clients access the same instance of this class over and over. 
+
+Note\+: \mbox{\hyperlink{Singleton_8h_source}{Singleton.\+h}} and Singleton.\+cc were derived from the \mbox{\hyperlink{classSingleton}{Singleton}} code example providied by Refactoring.\+Guru. The base code was then modified to fit our extension. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSingleton_aa7455f5d3492d901cc796f5869ddc1cc}\label{classSingleton_aa7455f5d3492d901cc796f5869ddc1cc}} 
+\index{Singleton@{Singleton}!Singleton@{Singleton}}
+\index{Singleton@{Singleton}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{Singleton()}{Singleton()}}
+{\footnotesize\ttfamily Singleton\+::\+Singleton (\begin{DoxyParamCaption}\item[{const std\+::string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{classSingleton}{Singleton}} constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the value used to differentiate between Singletons \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSingleton_ac530351296821e6f23bf9f09180bbb92}\label{classSingleton_ac530351296821e6f23bf9f09180bbb92}} 
+\index{Singleton@{Singleton}!AddDrone@{AddDrone}}
+\index{AddDrone@{AddDrone}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{AddDrone()}{AddDrone()}}
+{\footnotesize\ttfamily void Singleton\+::\+Add\+Drone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} $\ast$}]{drone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a drone to the drone\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em drone} & the drone to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSingleton_a7d651958d99368bc75548efe9d598147}\label{classSingleton_a7d651958d99368bc75548efe9d598147}} 
+\index{Singleton@{Singleton}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSingleton}{Singleton}} $\ast$ Singleton\+::\+Get\+Instance (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This is the static method that controls the access to the singleton instance. On the first run, it creates a singleton object and places it into the static field. On subsequent runs, it returns the client existing object stored in the static field. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & value used to differentiate between Singletons\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an instance of the \mbox{\hyperlink{classSingleton}{Singleton}}
+\end{DoxyReturn}
+The first time we call Get\+Instance we will lock the storage location and then we make sure again that the variable is null and then we set the value. RU\+: \mbox{\Hypertarget{classSingleton_a124b9cfca08f245aee11f8c9cb24b530}\label{classSingleton_a124b9cfca08f245aee11f8c9cb24b530}} 
+\index{Singleton@{Singleton}!UpdatePickupDistance@{UpdatePickupDistance}}
+\index{UpdatePickupDistance@{UpdatePickupDistance}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{UpdatePickupDistance()}{UpdatePickupDistance()}}
+{\footnotesize\ttfamily void Singleton\+::\+Update\+Pickup\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} \&}]{drone,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Updates distance traveled durring pickup. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em drone} & a reference to the drone \\
+\hline
+\mbox{\texttt{ in}}  & {\em distance} & the distance to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSingleton_a677837e214a9082d26c010d2c2418cd8}\label{classSingleton_a677837e214a9082d26c010d2c2418cd8}} 
+\index{Singleton@{Singleton}!UpdateTotalDistance@{UpdateTotalDistance}}
+\index{UpdateTotalDistance@{UpdateTotalDistance}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{UpdateTotalDistance()}{UpdateTotalDistance()}}
+{\footnotesize\ttfamily void Singleton\+::\+Update\+Total\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} \&}]{drone,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Updates the drone\textquotesingle{}s total\+Distance traveled. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em drone} & a reference to the drone \\
+\hline
+\mbox{\texttt{ in}}  & {\em distance} & the distance to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSingleton_a2e20cba109c48e6be46b9ff61a9c2e24}\label{classSingleton_a2e20cba109c48e6be46b9ff61a9c2e24}} 
+\index{Singleton@{Singleton}!UpdateTotalTime@{UpdateTotalTime}}
+\index{UpdateTotalTime@{UpdateTotalTime}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{UpdateTotalTime()}{UpdateTotalTime()}}
+{\footnotesize\ttfamily void Singleton\+::\+Update\+Total\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} \&}]{drone,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+
+
+Updates the total time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em drone} & a reference to the drone \\
+\hline
+\mbox{\texttt{ in}}  & {\em time} & the time to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSingleton_acefc58fd4067b84f8f4045f166a8c600}\label{classSingleton_acefc58fd4067b84f8f4045f166a8c600}} 
+\index{Singleton@{Singleton}!UpdateTotalTrips@{UpdateTotalTrips}}
+\index{UpdateTotalTrips@{UpdateTotalTrips}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{UpdateTotalTrips()}{UpdateTotalTrips()}}
+{\footnotesize\ttfamily void Singleton\+::\+Update\+Total\+Trips (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} \&}]{drone }\end{DoxyParamCaption})}
+
+
+
+Increments the drone number of trips by 1. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em drone} & a reference to the drone \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSingleton_aebcce783b0aaf9ad2d86d60f0b08f926}\label{classSingleton_aebcce783b0aaf9ad2d86d60f0b08f926}} 
+\index{Singleton@{Singleton}!UpdateTripDistance@{UpdateTripDistance}}
+\index{UpdateTripDistance@{UpdateTripDistance}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{UpdateTripDistance()}{UpdateTripDistance()}}
+{\footnotesize\ttfamily void Singleton\+::\+Update\+Trip\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} \&}]{drone,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Update distance traveled via trips only. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em drone} & a reference to the drone \\
+\hline
+\mbox{\texttt{ in}}  & {\em distance} & the distance to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSingleton_af23745b417359444b99407ac0826dc8a}\label{classSingleton_af23745b417359444b99407ac0826dc8a}} 
+\index{Singleton@{Singleton}!UpdateTripTime@{UpdateTripTime}}
+\index{UpdateTripTime@{UpdateTripTime}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{UpdateTripTime()}{UpdateTripTime()}}
+{\footnotesize\ttfamily void Singleton\+::\+Update\+Trip\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDrone}{Drone}} \&}]{drone,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+
+
+Updates the total time spent on trips. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em drone} & a reference to the drone \\
+\hline
+\mbox{\texttt{ in}}  & {\em time} & the time to be added \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classSingleton_a33baa8e709d33fa8cc34cb25e361cfdd}\label{classSingleton_a33baa8e709d33fa8cc34cb25e361cfdd}} 
+\index{Singleton@{Singleton}!value@{value}}
+\index{value@{value}!Singleton@{Singleton}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily std\+::string Singleton\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return \mbox{\hyperlink{classSingleton}{Singleton}}\textquotesingle{}s value. 
+
+\begin{DoxyReturn}{Returns}
+string representing this-\/$>$value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/include/Singleton.\+h\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/src/Singleton.\+cc\end{DoxyCompactItemize}

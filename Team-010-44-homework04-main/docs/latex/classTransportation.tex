@@ -1,0 +1,418 @@
+\hypertarget{classTransportation}{}\doxysection{Transportation Class Reference}
+\label{classTransportation}\index{Transportation@{Transportation}}
+
+
+A class that represents transportation vehicles in a physical system. Vehicles move using euler integration based on a specified velocity and direction.  
+
+
+
+
+{\ttfamily \#include $<$Transportation.\+h$>$}
+
+
+
+Inheritance diagram for Transportation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classTransportation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Transportation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTransportation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTransportation_a95e20e49be5ab109df1020575a12a963}{Transportation}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em Parameter constructor. Transportations are created with a name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTransportation_ae63d1b7fa5006d357228196b6b81684d}\label{classTransportation_ae63d1b7fa5006d357228196b6b81684d}} 
+\mbox{\hyperlink{classTransportation_ae63d1b7fa5006d357228196b6b81684d}{$\sim$\+Transportation}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTransportation_a57a916c0e38adbbbfa80d134188a03f0}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets the drone speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classTransportation_ab8bbb43fc680d8c5d536a2be3de015d4}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Gets the drone position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classTransportation_a94a8a8109ae73729ca1045b64848f79c}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Gets the drone direction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classTransportation_a42d7172db5365e11e6d5fe3a5cf1f26d}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em Gets the drone destination. \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classTransportation_afd3ac0babd878bcecccaa25fd2cdcd79}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em Get drone details. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTransportation_ad9b765f429214890872fabfc05a89dd7}{Get\+Availability}} () const
+\begin{DoxyCompactList}\small\item\em Gets the drone availability. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTransportation_af4b22a5ca6fb8915834ca19fa5353bfc}{Get\+Nearest\+Entity}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)=0
+\begin{DoxyCompactList}\small\item\em Gets the nearest entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTransportation_a0afb01c2e5aef8523e85e4a93017ddb4}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)=0
+\begin{DoxyCompactList}\small\item\em Updates the drone\textquotesingle{}s position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransportation_a048dcb84b87f9ad757127dc5259dbd14}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the drone\textquotesingle{}s position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransportation_a7e2ca275ca7ce84c43014d7913708f36}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the drone\textquotesingle{}s direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransportation_afe72c159d1b3ea385a540266cf8f41c5}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the dron\textquotesingle{}es destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransportation_a980133c69c3ccf267d2ea5f1e7052f84}{Rotate}} (double angle)
+\begin{DoxyCompactList}\small\item\em Rotates the \mbox{\hyperlink{classDrone}{Drone}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransportation_ac47083b6dc81f26d503ea9afe61cd0f3}{Jump}} (double height)
+\begin{DoxyCompactList}\small\item\em Make the drone jump. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportation_a58411cf038466fe40f18a85dab4a755d}{Transportation}} (const \mbox{\hyperlink{classTransportation}{Transportation}} \&transportation)=delete
+\begin{DoxyCompactList}\small\item\em Removed copy constructor so transportations cannot be copied. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportation}{Transportation}} \& \mbox{\hyperlink{classTransportation_a7a1b281ad1d5d164c62b2627224b903e}{operator=}} (const \mbox{\hyperlink{classTransportation}{Transportation}} \&transportation)=delete
+\begin{DoxyCompactList}\small\item\em Removed assignment operator so transportations cannot be copied. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTransportation_a3d6cc2d8a0a3003f52fb55e5dcd1498c}\label{classTransportation_a3d6cc2d8a0a3003f52fb55e5dcd1498c}} 
+std\+::map$<$ std\+::string, float $>$ \& {\bfseries Get\+Data} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTransportation_a586ade84d6ced0b0514ae462a9eadd3b}\label{classTransportation_a586ade84d6ced0b0514ae462a9eadd3b}} 
+Json\+Object {\bfseries details}
+\item 
+\mbox{\Hypertarget{classTransportation_a71cb371048a363aa6636dbcbec2e473f}\label{classTransportation_a71cb371048a363aa6636dbcbec2e473f}} 
+\mbox{\hyperlink{classVector3}{Vector3}} {\bfseries position}
+\item 
+\mbox{\Hypertarget{classTransportation_a0c5a7ea1a7f1f5ecfcc37e7199e118ce}\label{classTransportation_a0c5a7ea1a7f1f5ecfcc37e7199e118ce}} 
+\mbox{\hyperlink{classVector3}{Vector3}} {\bfseries direction}
+\item 
+\mbox{\Hypertarget{classTransportation_a34c20f53fcb0f039d274da08e4489b50}\label{classTransportation_a34c20f53fcb0f039d274da08e4489b50}} 
+float {\bfseries jump\+Height} = 0
+\item 
+\mbox{\Hypertarget{classTransportation_acc86c9a8c208cd23a2514c3ccd67d851}\label{classTransportation_acc86c9a8c208cd23a2514c3ccd67d851}} 
+bool {\bfseries go\+Up} = true
+\item 
+\mbox{\Hypertarget{classTransportation_afadbd22d81cbcfa20e7b4785d2d6d33c}\label{classTransportation_afadbd22d81cbcfa20e7b4785d2d6d33c}} 
+\mbox{\hyperlink{classVector3}{Vector3}} {\bfseries destination}
+\item 
+\mbox{\Hypertarget{classTransportation_a19b4f63fca786433ec4c571ca21d9c3f}\label{classTransportation_a19b4f63fca786433ec4c571ca21d9c3f}} 
+float {\bfseries speed}
+\item 
+\mbox{\Hypertarget{classTransportation_a33f9a0e7eb033135c61c32d432be00a0}\label{classTransportation_a33f9a0e7eb033135c61c32d432be00a0}} 
+bool {\bfseries available}
+\item 
+\mbox{\Hypertarget{classTransportation_a8a726e83528c298fdc773d4f097c9959}\label{classTransportation_a8a726e83528c298fdc773d4f097c9959}} 
+bool {\bfseries picked\+Up}
+\item 
+\mbox{\Hypertarget{classTransportation_aea901441b7c40286b473ec745f5395e1}\label{classTransportation_aea901441b7c40286b473ec745f5395e1}} 
+std\+::string {\bfseries strategy\+Name}
+\item 
+\mbox{\Hypertarget{classTransportation_ace827b7d07d294829d96dc37298cabcb}\label{classTransportation_ace827b7d07d294829d96dc37298cabcb}} 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ {\bfseries nearest\+Entity} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{classTransportation_a3bf4570730389f1b7618220ef660ae04}\label{classTransportation_a3bf4570730389f1b7618220ef660ae04}} 
+\mbox{\hyperlink{classIStrategy}{I\+Strategy}} $\ast$ {\bfseries to\+Target\+Pos\+Strategy} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{classTransportation_a2b0a80e592a06b2a42ca4b1895b246e6}\label{classTransportation_a2b0a80e592a06b2a42ca4b1895b246e6}} 
+\mbox{\hyperlink{classIStrategy}{I\+Strategy}} $\ast$ {\bfseries to\+Target\+Dest\+Strategy} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{classTransportation_a79c7d74767518ba4cf4e6fa783d98fbd}\label{classTransportation_a79c7d74767518ba4cf4e6fa783d98fbd}} 
+std\+::map$<$ std\+::string, float $>$ {\bfseries data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents transportation vehicles in a physical system. Vehicles move using euler integration based on a specified velocity and direction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransportation_a95e20e49be5ab109df1020575a12a963}\label{classTransportation_a95e20e49be5ab109df1020575a12a963}} 
+\index{Transportation@{Transportation}!Transportation@{Transportation}}
+\index{Transportation@{Transportation}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{Transportation()}{Transportation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transportation\+::\+Transportation (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Parameter constructor. Transportations are created with a name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & Name of the \mbox{\hyperlink{classTransportation}{Transportation}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransportation_a58411cf038466fe40f18a85dab4a755d}\label{classTransportation_a58411cf038466fe40f18a85dab4a755d}} 
+\index{Transportation@{Transportation}!Transportation@{Transportation}}
+\index{Transportation@{Transportation}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{Transportation()}{Transportation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transportation\+::\+Transportation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTransportation}{Transportation}} \&}]{transportation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Removed copy constructor so transportations cannot be copied. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em transportation} & transportation to be copied \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransportation_ad9b765f429214890872fabfc05a89dd7}\label{classTransportation_ad9b765f429214890872fabfc05a89dd7}} 
+\index{Transportation@{Transportation}!GetAvailability@{GetAvailability}}
+\index{GetAvailability@{GetAvailability}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{GetAvailability()}{GetAvailability()}}
+{\footnotesize\ttfamily bool Transportation\+::\+Get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the drone availability. 
+
+\begin{DoxyReturn}{Returns}
+true -\/ the drone is available 
+
+false -\/ the drone is not available 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_ab98734fed42933c72b3ff996b146a558}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_a42d7172db5365e11e6d5fe3a5cf1f26d}\label{classTransportation_a42d7172db5365e11e6d5fe3a5cf1f26d}} 
+\index{Transportation@{Transportation}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Transportation\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the drone destination. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} Object of drone destination 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_afd3ac0babd878bcecccaa25fd2cdcd79}\label{classTransportation_afd3ac0babd878bcecccaa25fd2cdcd79}} 
+\index{Transportation@{Transportation}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Transportation\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get drone details. 
+
+\begin{DoxyReturn}{Returns}
+Json\+Object of drone properties 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_a94a8a8109ae73729ca1045b64848f79c}\label{classTransportation_a94a8a8109ae73729ca1045b64848f79c}} 
+\index{Transportation@{Transportation}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Transportation\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the drone direction. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} Object of the drone direction 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_af4b22a5ca6fb8915834ca19fa5353bfc}\label{classTransportation_af4b22a5ca6fb8915834ca19fa5353bfc}} 
+\index{Transportation@{Transportation}!GetNearestEntity@{GetNearestEntity}}
+\index{GetNearestEntity@{GetNearestEntity}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{GetNearestEntity()}{GetNearestEntity()}}
+{\footnotesize\ttfamily virtual void Transportation\+::\+Get\+Nearest\+Entity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the nearest entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em scheduler} & A vector of pointers to I\+Entitys (entities) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classBus_a59520a6917cd5e0c6048123926c28c62}{Bus}}, and \mbox{\hyperlink{classDrone_a21d9dc799ee8a6c10b579fcab401bd57}{Drone}}.
+
+\mbox{\Hypertarget{classTransportation_ab8bbb43fc680d8c5d536a2be3de015d4}\label{classTransportation_ab8bbb43fc680d8c5d536a2be3de015d4}} 
+\index{Transportation@{Transportation}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Transportation\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the drone position. 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{classVector3}{Vector3}} Object containing the drone position. x and y coordinates 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_a57a916c0e38adbbbfa80d134188a03f0}\label{classTransportation_a57a916c0e38adbbbfa80d134188a03f0}} 
+\index{Transportation@{Transportation}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Transportation\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the drone speed. 
+
+\begin{DoxyReturn}{Returns}
+the drone speed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_ac47083b6dc81f26d503ea9afe61cd0f3}\label{classTransportation_ac47083b6dc81f26d503ea9afe61cd0f3}} 
+\index{Transportation@{Transportation}!Jump@{Jump}}
+\index{Jump@{Jump}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Transportation\+::\+Jump (\begin{DoxyParamCaption}\item[{double}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Make the drone jump. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em height} & how tall the drone should jump \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a4e8eb64a324e1196be039c5e2a293b7a}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_a7a1b281ad1d5d164c62b2627224b903e}\label{classTransportation_a7a1b281ad1d5d164c62b2627224b903e}} 
+\index{Transportation@{Transportation}!operator=@{operator=}}
+\index{operator=@{operator=}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportation}{Transportation}}\& Transportation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTransportation}{Transportation}} \&}]{transportation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Removed assignment operator so transportations cannot be copied. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em transportation} & drone to be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransportation_a980133c69c3ccf267d2ea5f1e7052f84}\label{classTransportation_a980133c69c3ccf267d2ea5f1e7052f84}} 
+\index{Transportation@{Transportation}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Transportation\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Rotates the \mbox{\hyperlink{classDrone}{Drone}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em angle} & angle in which to rotate the \mbox{\hyperlink{classDrone}{Drone}} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a59e7deed4d0979f04de8457a5afb1cb3}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_afe72c159d1b3ea385a540266cf8f41c5}\label{classTransportation_afe72c159d1b3ea385a540266cf8f41c5}} 
+\index{Transportation@{Transportation}!SetDestination@{SetDestination}}
+\index{SetDestination@{SetDestination}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{SetDestination()}{SetDestination()}}
+{\footnotesize\ttfamily void Transportation\+::\+Set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{des\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the dron\textquotesingle{}es destination. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em des\+\_\+} & \mbox{\hyperlink{classVector3}{Vector3}} object containing destination \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_a7e2ca275ca7ce84c43014d7913708f36}\label{classTransportation_a7e2ca275ca7ce84c43014d7913708f36}} 
+\index{Transportation@{Transportation}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void Transportation\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{dir\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the drone\textquotesingle{}s direction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dir\+\_\+} & \mbox{\hyperlink{classVector3}{Vector3}} object containing direction \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_a048dcb84b87f9ad757127dc5259dbd14}\label{classTransportation_a048dcb84b87f9ad757127dc5259dbd14}} 
+\index{Transportation@{Transportation}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Transportation\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{pos\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the drone\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos\+\_\+} & Vectory3 object containing position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_af0475048b09dc13ed6cf8e7c7be2ae6b}{I\+Entity}}.
+
+\mbox{\Hypertarget{classTransportation_a0afb01c2e5aef8523e85e4a93017ddb4}\label{classTransportation_a0afb01c2e5aef8523e85e4a93017ddb4}} 
+\index{Transportation@{Transportation}!Update@{Update}}
+\index{Update@{Update}!Transportation@{Transportation}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Transportation\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the drone\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & Delta time. The change in time between each frame \\
+\hline
+\mbox{\texttt{ in}}  & {\em scheduler} & A vector of pointers to entities \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{I\+Entity}}.
+
+
+
+Implemented in \mbox{\hyperlink{classBus_a0f8dcc1ffbe1ad308e617acf8600acf3}{Bus}}, and \mbox{\hyperlink{classDrone_a6798b0bd297ca7a930016cd2dda0b7ff}{Drone}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/include/Transportation.\+h\item 
+/home/chuon007/csci-\/3081w-\/f22/\+Team-\/010-\/44-\/homework04/libs/transit/src/Transportation.\+cc\end{DoxyCompactItemize}

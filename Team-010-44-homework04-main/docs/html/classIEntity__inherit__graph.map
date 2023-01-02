@@ -1,0 +1,6 @@
+<map id="IEntity" name="IEntity">
+<area shape="rect" id="node1" title="Represents an entity Abstract controller class used in the Transit Service. Uses the Model View Contr..." alt="" coords="147,5,211,32"/>
+<area shape="rect" id="node2" href="$classBaseDecorator.html" title="Base Decorator using Decorator Pattern." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$classDrone.html" title="A class that represents a drone in a physical system. Drones move using euler integration based on a ..." alt="" coords="149,80,210,107"/>
+<area shape="rect" id="node4" href="$classRobot.html" title="Class that represents a robot. Robots move using euler integration based on a specified velocity and ..." alt="" coords="235,80,295,107"/>
+</map>
