@@ -1,7 +1,7 @@
 # Team-010-44 Bus Extension for Drone Simulation System
 
 ## Team Members: 
-Jenna Chuong (chuon007), Tenzin Tseten (tsete003), Dhondup Dolma (dolma012)
+Dhondup Dolma (dolma012), Jenna Chuong (chuon007), Tenzin Tseten (tsete003)
 
 ## UML
 [Hw 4 UML.pdf](https://github.umn.edu/umn-csci-3081-F22/Team-010-44-homework04/files/917/Hw4.1.pdf)
