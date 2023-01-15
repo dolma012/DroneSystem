@@ -11,9 +11,6 @@ Dhondup Dolma (dolma012), Jenna Chuong (chuon007), Tenzin Tseten (tsete003)
 ## Docker
 Link to Docker hub where this program can be run: https://hub.docker.com/repository/docker/chuon007/homework4
 
-## PRESENTATION
-Link to our presentation video: https://youtu.be/sMeqSC0YXVc
-
 ## What is this project about?
 This project simulates the behavior of an Uber using entities such as drones and robots. This projects gives students a chance to practice using various design patterns to add additional functionality to the base project. 
 
