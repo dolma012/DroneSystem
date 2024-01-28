@@ -101,13 +101,3 @@ For data collection, we use the singleton design pattern. We use this because ot
 
 ## Data Analysis
 Based on the data we collected, we observed that the speed of the Drone has an inverse relationship between the Total Time and Trip Time. We noticed that Drones initiated with faster speeds reported shorter Total Times and Trip Times. Furthermore, we also observed another trend regarding pick up distance and drop of distances. The Total Distance the Drone travels will be the largest of the distance data points because it includes both the distance traveled to pickup a Robot and the distance traveled to drop off the Robot on a trip. On average, we found that the distance traveled by the drone to pickup a robot is less than the distance traveled by the drone dropping of the Robot to its destination. We believe this is due to the fact that when picking up, the Drone can fly in the air and use a straight Beeline to get to the Robot. This distance will be smaller than the distance used by one of the drop off strategies like AStar, DFS, and Dijkstra which need to follow a path generated using a graph of routes to take. 
-
-# Spring Retrospective
-## What went well?
-Everyone was on task and did their part. We were able to finish all our tasks on the Jira board/backlog. We had adequate communication across our team. Each team member would update the group with what tasks they finished and were working on. 
-
-## What didn't go well?
-Initially, our idea was non-trivial, however, after attempting to code the logic, we found out that our implementation of our idea was too complicated to code. So, we had to shift gears and use a different design pattern to implement our extension. Another thing that didn't go as expected was that we ran into merge conflicts when trying to merge a branch to dev. We didn't review the merge request closely enough which caused our dev branch to break.
-
-## Ideas for future sprint(s)
-If we were to do this again, we would add a weekly or daily standup as a way to improve our communication within our team. In the standup we would want to talk about what tasks we finished, what we're working on, and what challenges we are facing. Furthermore, in the future we will be more careful about reviewing merge requests and making sure that everything works as it should before merging. We will also more carefully review conflicts, so that the right code is merged. 
